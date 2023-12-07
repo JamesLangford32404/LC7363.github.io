@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+	<title>Japonica Cookers: Contact</title>
+	<meta charset="utf-8"><link rel="stylesheet" href="css/contact.css">
+	<meta name="viewport" content="width-device-width, initial-scale-1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><h1>Japonica Cookers</h1></a>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="team.html">Our Team</a></li>
+			<li><a href="specials.html">Specials</a></li>
+			<li><a href="training.html">Training</a></li> 
+			<li><a href="media.html">Media</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			
+		</ul>
+	</nav>
+	
+	<!-- Hero Image -->
+	<div id="hero">
+		<img src="images/rice-cooker-banner.jpg" alt="rice cooker on countertop">
+	</div>
+	
+	
+	<main>
+		<h1>Want to get a hold of us? Fill out the following form and we'll get back to you soon!</h1>
+		
+		<form class="form-grid"><!--Start Grid-->
+		
+			<fieldset>
+				<legend>Contact Info</legend>
+				<label for="fName">First Name:</label>
+				<input type="text" name="fName" id="fName" required>
+				
+				<label for="lName">Last Name:</label>
+				<input type="text" name="lName" id="lName" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required>
+				
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+				
+				<label for="date">Date:</label>
+				<input type="date" id="date" name="date" required>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Questions</legend>
+				<label for="reference">Why would you like to contact us?</label>
+				<select name="reference" id="reference">
+					<option value="issue">Product Issue</option>
+					<option value="question">Product Question</option>
+					<option value="job">Job Application</option>
+					<option value="other">Other</option>
+				</select>
+				<label for="questions">Write your question below</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>				
+			</fieldset>
+			
+			<fieldset>
+				<legend>Additional Information</legend>
+				<label>How did you discover our website? (Select all that apply)</label>
+				
+				<label for="frnd"><input type="checkbox" name="interest" id="frnd" value="friend">Friend</label>
+				
+				<label for="fmly"><input type="checkbox" name="interest" id="fmly" value="family member">Family Member</label>
+				
+				<label for="advert"><input type="checkbox" name="interest" id="advert" value="advert">Advert</label>
+				
+				<label for="other"><input type="checkbox" name="interest" id="other" value="other">Other</label>
+
+				
+			</fieldset>
+			
+			<input type="submit" id="submit" value="Submit" class="btn">
+			
+			<input type="reset" id="reset" value="Reset" class="btn">
+			
+		</form>
+	</main>
+	
+	<footer>
+		<p>&copy; Copyright 2099. All Rights Reserved. 
+		<a href="mailto:info@japonicacookers.com">Request information</a>
+		Jamie Langford &nbsp; &nbsp; c0922588</p>
+	</footer>
+</body>
+</html>

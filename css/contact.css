@@ -1,0 +1,161 @@
+/*
+Author: Jamie Langford
+Date: Oct 15,2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+	margin: 0;
+	padding:0;
+	border: 0;
+	background-color: #373694;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+/* Style rules for header */
+header {
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+}
+
+header h1 {
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+}
+
+
+/* Style rules for navigation area */
+nav {
+	background-color: #373694;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+main {
+	display: block;
+	padding: 2%;
+	background-color: #373694;
+	overflow: auto;
+	text-align: center;
+}
+
+video {
+    margin: 0 auto 4%;
+}
+
+main p {
+	font-size: 1.75em;
+	font-family: 'Playfair Display', serif;
+	color: #000;
+}
+
+main h1 {
+	font-size: 1.75em;
+	font-family: 'Oswald', sans-serif;
+	color: #fff
+}
+
+main a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#form {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: #400959;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+
+/*Style rules for form elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+	background-color: #ccc;
+}
+fieldset {
+	border-radius: 25px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.25em;
+	background-color: #fff;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit, #reset {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+form {
+	width: auto;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+
+.btn {
+	grid-column: 1 / span 3;
+}
+   
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-Size: 0.65em;
+	clear: left;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bold {
+	font-size: 1em;
+	font-weight: bold;
+}
+

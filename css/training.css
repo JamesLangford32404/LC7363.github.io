@@ -1,0 +1,138 @@
+/*
+Author: Jamie Langford
+Date: Oct 15,2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+	margin: 0;
+	padding:0;
+	border: 0;
+	background-color: #373694;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+/* Style rules for header */
+header {
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+}
+
+header h1 {
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+}
+
+
+/* Style rules for navigation area */
+nav {
+	background-color: #373694;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+main {
+	display: block;
+	padding: 2%;
+	background-color: #373694;
+	overflow: auto;
+	text-align: center;
+}
+
+main p {
+	font-size: 1.75em;
+	font-family: 'Playfair Display', serif;
+	color: #000;
+}
+
+main h1 {
+	font-size: 1.75em;
+	font-family: 'Oswald', sans-serif;
+	color: #fff
+}
+
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-Size: 0.65em;
+	clear: left;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bold {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* Style rules for table */
+table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #373694;
+}
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1%;
+	background-color: #400959;
+	color: #fff;
+}
+
+th, td {
+	border: 1px solid #000;
+	padding: 2%;
+}
+
+th {
+	background-color: #400959;
+	color: #fff;
+	font-size: 1.15em;
+}
+
+tr {
+	background-color: #fff;
+	font-size: 1em;
+}
+
+tr:nth-child(odd) {
+	background-color: #ccc;
+}
+
+tr:hover {
+	background-color: #9966cc;
+}

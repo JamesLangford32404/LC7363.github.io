@@ -1,0 +1,249 @@
+/*
+Author: Jamie Langford
+Date: Nov 25,2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+	margin: 0;
+	padding:0;
+	border: 0;
+	background-color: #373694;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+
+/* style rules for mobile viewport */
+
+/* Style rules for header */
+header {
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #373694;
+	height: 150px;
+}
+
+header h1 {
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+}
+
+/* Style for rules for navigation area */
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* Style rules for navigation area */
+nav {
+	background-color: #373694;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* Style rules for the main area */
+main {
+	display: block;
+	padding: 2%;
+	background-color: #373694;
+	overflow: auto;
+	text-align: center;
+}
+
+main p {
+	font-size: 1.75em;
+	font-family: 'Playfair Display', serif;
+	color: #000;
+}
+
+main h1 {
+	background-color: #3675cf;
+	font-size: 1.75em;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	border-radius: 25px;
+}
+
+main a {
+	color: #000;
+	font-weight: bold;
+}
+
+ #about, #guarantee {
+	color: #fff;
+	background-color: #3675cf;
+	border-radius: 25px;
+}
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-Size: 0.65em;
+	clear: left;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bold {
+	font-size: 1em;
+	color: #E73658
+;
+	font-weight: bold;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+    
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area  */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    /* Tablet Viewport: Style rules for main content area */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+		text-align: center;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav ul {
+        text-align: center;
+    }
+    
+    nav li {
+        border: none;
+    }
+    
+    nav li a {
+        padding: 0.5em 1em;
+    }
+    
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+    
+    /* Desktop Viewport: Style rules for main content */
+    main {
+        clear: left;
+    }
+    
+    main h1 {
+        font-size: 1.8em;
+		color: #fff;
+    }
+    
+	#guarantee {
+		width: 49%;
+		float: right;
+		margin: 0.2%;
+	}
+
+	#about {
+		width: 49%;
+		float: left;
+		margin: 0.2%;
+	}  
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
